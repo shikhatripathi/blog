@@ -1,0 +1,8 @@
+RewriteEngine on
+#1) redirect the client from "/index.php/home/index" to "/home/index"
+RewriteCond %{THE_REQUEST} /index\.php/(.+)\sHTTP [NC]
+RewriteRule ^ /%1 [NE,L,R]
+#2)internally map "/home/index" to "/index.php/homre/index"
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.+)$ /index.php/$1 [L]

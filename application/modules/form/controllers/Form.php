@@ -18,12 +18,16 @@ class Form extends MX_Controller {
 	public function register_user()
 	{
 			$this->load->model('form_model');
+			$this->load->helper('string');
+			//echo random_string('alnum','16');
 		$user=array(
+			'user_id'=>random_string('alnum','16'),
 			'uname' =>$this->input->post('uname'),
 			'umobile' =>$this->input->post('umobile'),
 			'uaddress' =>$this->input->post('uaddress'),
 			'uemail' =>$this->input->post('uemail'),
 			'upassword' =>$this->input->post('upassword'),
+			'ublog'=>$this->input->post('ublog'),
 			 'user_type'       => 2
 		);
 		$email_check=$this->form_model->email_check($user['uemail']);

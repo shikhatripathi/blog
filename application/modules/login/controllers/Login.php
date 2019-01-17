@@ -14,14 +14,18 @@ class Login extends  MX_Controller  {
 
 	function login_user(){
         $this->load->library('session');
-        $email=$this->input->post('uemail');
-        $password=$this->input->post('upassword');
+        $email = $this->input->post('uemail');
+        $password = $this->input->post('upassword');
         $this->load->model("login_model");
         $user=$this->login_model->verify_user($email,$password);
-       
+
+       // echo "string";
+       //var_dump($password);
+       //exit;
         if($user){
           
             $session_data = array(
+                'user_id'=>$user['user_id'],
                 'uname'     =>  $user['uname'],
                 'uemail'    =>  $user['uemail'],
                 'user_type'     =>  $user['user_type']
@@ -33,11 +37,18 @@ class Login extends  MX_Controller  {
             redirect('dashboard');
         }
         else{
-           /*$data = array('msg' => 'Username Or Passwrod is Wrong');*/
+        
             //$this->load->view('login');
-            echo "something went wrong";
+            echo "Something went wrong";
             }
-        }       
+        }     
+
+     public function logout(){
+    $this->session->unset_userdata('session_data',$session_data);
+    $this->session->sess_destroy();
+    redirect('login');
+}
+
 }    
 	
 

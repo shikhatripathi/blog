@@ -28,6 +28,8 @@
         <input type="email" id="inputPassword" class="form-control" placeholder="Enter your email" name="uemail" required>
         Password
          <input type="password" id="inputPassword" class="form-control" placeholder="Enter your password" name="upassword" required>
+        Blog Name
+         <input type="text" id="inputPassword" class="form-control" placeholder="Enter your password" name="ublog" required>
         
           <label>
             <input type="checkbox" value="remember-me"> Remember me

@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="<?php echo base_url(); ?>/assets1/css/style.css">
   <!-- endinject -->
   <!--<link rel="shortcut icon" href="images/favicon.png" /> -->
+
 </head>
 <body>
   <div class="container-scroller">
@@ -32,20 +33,12 @@
         <p class="page-name d-none d-lg-block">Your blog here</p>
         <ul class="navbar-nav ml-lg-auto">
           <li class="nav-item">
-            <form class="mt-2 mt-md-0 d-none d-lg-block search-input">
-              <div class="input-group">
-                <span class="input-group-addon d-flex align-items-center"><i class="icon-magnifier icons"></i></span>
-                <input type="text" class="form-control" placeholder="Search...">
-              </div>
+          
+             
             </form>
           </li>
-          <li class="nav-item dropdown mail-dropdown">
-            <a class="nav-link count-indicator" id="MailDropdown" href="#" data-toggle="dropdown">
-                <i class="icon-envelope-letter icons"></i>
-                <span class="count bg-danger"></span>
-            </a>
             <div class="dropdown-menu navbar-dropdown mail-notification dropdownAnimation" aria-labelledby="MailDropdown">
-              <a class="dropdown-item" href="#">
+              <a class="dropdown-item" href="<?php echo base_url();?>changepass">
                 
               </a>
               <a href="#" class="dropdown-item view-all">View all</a>
@@ -97,19 +90,19 @@
                 </div>
               </a>
             </div>
-          </li>
-          <li class="nav-item lang-dropdown d-none d-sm-block">
-            <a class="nav-link" href="#">
-              <p class="mb-0">English <i class="flag-icon flag-icon-gb"></i></p>
-            </a>
-          </li>
+          </li> 
+
+      
+              
+          
           <li class="nav-item d-none d-sm-block profile-img">
             <a class="nav-link profile-image" href="#">
-              <img src="images/faces/face4.jpg" alt="profile-img">
+              <img src="<?php echo base_url(); ?>assets1/images/faces/face4.jpg" alt="profile-img">
               <span class="online-status online bg-success"></span>
             </a>
           </li>
         </ul>
+       
         <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center ml-auto" type="button" data-toggle="offcanvas">
           <span class="icon-menu icons"></span>
         </button>
@@ -122,50 +115,27 @@
         <nav class="sidebar sidebar-offcanvas" id="sidebar">
           <ul class="nav">
             <li class="nav-item nav-category">
-              <span class="nav-link">Blog list</span>
-            </li>
+             <a href="<?php echo base_url(); ?>login"><span class="nav-link" style="font-size: 20px">Create post</span>
+            </li></a> 
             <li class="nav-item">
-              <a class="nav-link" href="index.html">
-                <span class="menu-title">Post</span>
+              <li style="color: green;font-size: 20px">All Posts</li>
+                  <select>
+                    
+                  <option>Active Post</option>
+                  <option>Draft</option>
+                </select>
+
+                
+
                 <i class="icon-speedometer menu-icon"></i>
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="pages/widgets.html">
-                <span class="menu-title">Comments</span>
-                <i class="icon-wrench menu-icon"></i>
-              </a>
-            </li>
+            
             <li class="nav-item nav-category">
-              <span class="nav-link">Pages </span>
+              <span class="nav-link" style="font-size: 20px">Catagories </span>
             </li>
-            <li class="nav-item nav-category">
-              <span class="nav-link">Layout</span>
-            </li>
-            <li class="nav-item nav-category">
-              <span class="nav-link">Theme</span>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-                <span class="menu-title">Settings</span>
-                <i class="icon-layers menu-icon"></i>
-              </a>
-              
-            <li class="nav-item nav-category">
-              <span class="nav-link">SAMPLE PAGES</span>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
-                <span class="menu-title">General Pages</span>
-                <i class="icon-bubbles menu-icon"></i>
-              </a>
-              <div class="collapse" id="auth">
-                <ul class="nav flex-column sub-menu">
-                  <li class="nav-item"> <a class="nav-link" href="pages/samples/login.html"> Login </a></li>
-                  <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> Register </a></li>
-                  <li class="nav-item"> <a class="nav-link" href="pages/samples/error-404.html"> 404 </a></li>
-                  <li class="nav-item"> <a class="nav-link" href="pages/samples/error-500.html"> 500 </a></li>
-                  <li class="nav-item"> <a class="nav-link" href="pages/samples/blank-page.html"> Blank Page </a></li>
+           
+
                 </ul>
               </div>
             </li>
@@ -183,19 +153,17 @@
                     <div class="nav-wrapper d-inline-block mt-4 mt-lg-0">
                       <ul class="nav nav-pills">
                         <li class="nav-item">
-                          <a class="nav-link" href="#">Now</a>
+                          <a class="nav-link" href="<?php echo base_url();?>login/logout">Logout</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link active" href="#">Day</a>
+                          <a class="nav-link active" href="<?php echo base_url();?>changepass">Change Password</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">Week</a>
+                          <a class="nav-link" href="#">Edit Profile</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">Month</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">All Time</a>
+                          <a class="nav-link" href="#">Settings</a>
+                        
                         </li>
                       </ul>
                     </div>
@@ -252,6 +220,7 @@
               </div>
             </div>
           </div>
+           
           <!-- ROW ENDS -->
           <div class="row">
 						<div class="col-md-6 grid-margin">
@@ -344,8 +313,8 @@
         </div>
         <!-- content-wrapper ends -->
         <!-- partial:partials/_footer.html -->
-        <footer class="footer">
-          <div class="container-fluid clearfix">
+           <footer class="footer">
+           <div class="container-fluid clearfix">
             <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © 2018 <a href="http://www.bootstrapdash.com/" target="_blank">Bootstrapdash</a>. All rights reserved.</span>
             <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with <i class="mdi mdi-heart text-danger"></i></span>
           </div>

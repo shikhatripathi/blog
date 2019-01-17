@@ -14,21 +14,21 @@
   <script type="text/javascript" src="<?php echo base_url(); ?>assets2/js/bootstrap.min.js"></script>
 </head>
 <body>
-<div class="container">
+<div class="container" style="border :2px solid black;background-color:rgba(0,0,0,0.2);">
 
-      <form class="form-signin" action="<?php echo base_url();?>index.php/login/login_user"  method="post">
-        <h2 class="form-signin-heading">Please Login</h2>
+      <form  method="post" class="form-signin" action="<?php echo base_url();?>login/login_user">
+        <h2 class="form-signin-heading" style="font-size:42px;color: #cc3300;">Please Login</h2>
         <label for="inputEmail" class="sr-only">Email address</label>
-        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+        <input type="email" name="uemail" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
 
         <label for="inputPassword" class="sr-only">Password</label>
-        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+        <input type="password" name="upassword" id="inputPassword" class="form-control" placeholder="Password" required>
         <div class="checkbox">
           <label>
             <input type="checkbox" value="remember-me"> Remember me
           </label>
         </div>
-        <button class="btn btn-lg btn-primary btn-block" type="submit"><a href="<?php echo base_url();?>index.php/dashboard/dashboard">Login</a></button>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
       <div style="text-align: center;">
       	<h4>OR</h4>
   <hr>

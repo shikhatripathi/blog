@@ -53,7 +53,7 @@
                         <div class="navbar-collapse collapse">
                             <ul class="nav navbar-nav navbar-right">
                                 <li><a href="index.html">Login</a></li>
-                                <li><a href="<?php echo base_url();?>index.php/form/form-view">Register</a></li>
+                                <li><a href="<?php echo base_url();?>form/form-view">Register</a></li>
                                 <li><a href="pricing.html">Pricing</a></li>
                                 <li><a href="portfolio.html">Portfolio</a></li>
                                 <li><a href="contact.html">Contact</a></li>
@@ -81,8 +81,8 @@
                         </div>
                         <div class="navbar-collapse collapse">
                             <ul class="nav navbar-nav navbar-right">
-                                <li><a href="<?php echo base_url();?>index.php/form/form/login">Login</a></li>
-                                <li><a href="<?php echo base_url();?>index.php/form/form">Register</a></li>
+                                <li><a href="<?php echo base_url();?>login">Login</a></li>
+                                <li><a href="<?php echo base_url();?>form">Register</a></li>
                            
                                 <li><a href="contact.html">Contact</a></li>
                                      <li><div class="g-signin2" data-onsuccess="onSignIn"></div></li>
@@ -277,9 +277,9 @@
                                 data-src-retina="assets/img/logo2x.png" width="119" height="22" />
                             <br />
                             <br />
-                            © Frittt Templates.
+                
                             <br />
-                            All Rights Reserved.
+                
                         </div>
                         <div class="col-md-4 col-lg-3 col-sm-4  col-xs-12 xs-m-b-20">
                             <address class="xs-no-padding  col-md-6 col-lg-6 col-sm-6  col-xs-12">

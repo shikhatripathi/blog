@@ -101,7 +101,7 @@
                         <!-- SLIDE  -->
                         <li data-transition="fade" data-slotamount="5" data-masterspeed="700">
                             <!-- MAIN IMAGE -->
-                            <img src="<?php echo base_url();?>assets/img/bg/slide_one.jpg" alt="slidebg1" data-bgfit="cover" data-bgposition="center center"
+                            <img height="700px" width="100%" src="<?php echo base_url();?>assets/img/bg/slide_one.jpg" alt="slidebg1" data-bgfit="cover"  data-bgposition="center center"
                                 data-bgrepeat="no-repeat">
 
 

@@ -115,7 +115,7 @@
         <nav class="sidebar sidebar-offcanvas" id="sidebar">
           <ul class="nav">
             <li class="nav-item nav-category">
-             <a href="<?php echo base_url(); ?>login"><span class="nav-link" style="font-size: 20px">Create post</span>
+             <a href="<?php echo base_url(); ?>editor"><span class="nav-link" style="font-size: 20px">Create post</span>
             </li></a> 
             <li class="nav-item">
               <li style="color: green;font-size: 20px">All Posts</li>

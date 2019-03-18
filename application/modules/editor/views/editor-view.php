@@ -38,7 +38,9 @@ For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
 	<div class="grid-container">
 		
 	</div>
+
 </footer>
+<div><button type="submit">Submit</button></div>
  <script>
     CKEDITOR.replace('editor1');
   </script>

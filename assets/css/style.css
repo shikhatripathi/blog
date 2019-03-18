@@ -20,7 +20,10 @@
 html{
 	font-size: 100%;
 }
+
 body { 
+
+
   color: #6f7b8a; 
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size:13px;
@@ -31,6 +34,8 @@ body {
   font-weight: normal;
   background-color:#f2f4f6;  
   text-rendering: optimizeLegibility;
+  margin: -50px;
+  background-size: cover;
 }
 .main-wrapper{
 	opacity:0;

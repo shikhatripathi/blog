@@ -9,4 +9,7 @@ class Editor extends MX_Controller {
 	{
 		$this->load->view('editor-view');
 	}
+	function submit_data(){
+       $this->load->model('Editor_model');
+	}
 }

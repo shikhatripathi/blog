@@ -11,5 +11,9 @@ class Editor extends MX_Controller {
 	}
 	function submit_data(){
        $this->load->model('Editor_model');
+       $this->Editor_model->submit_data();
+       $user=array(
+		
+			'blog' =>$this->input->post('blog'));
 	}
 }

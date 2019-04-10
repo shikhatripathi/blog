@@ -26,8 +26,8 @@ For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
 		<div class="grid-container">
 			<div class="grid-width-100">
 				
-				<textarea name="editor1" style="height: 400px; width: auto;"></textarea>
-
+				<textarea name="blog" style="height: 400px; width: auto;"></textarea>
+                
 			</div>
 		</div>
 	</div>
